@@ -10,14 +10,30 @@
 </head>
 <body>
 
+/*shaufi */
 <div class="container">
   <h1>Button for ESp32 x</h1>
-  <button type="submit" class="btn btn-info" onclick="getblynk()">Click Me!</button>
+  <button type="submit" class="btn btn-info" onclick="getblynk2()">Btn Depan!</button>
 </div>
 
-<script>
-  function getblynk(){
-  $.get("https://blynk.cloud/external/api/update?token=rKOgUiuZz1yriWCRxr183nzBE7W77iXB&V1=0", (data, status) => {
+
+/*shaufi */
+<div class="container2">
+  <h1>Button for ESp32 x</h1>
+  <button type="submit" class="btn btn-info2" onclick="getblynk()">Btn Belakang!</button>
+</div>
+
+<script> /*shaufi */
+  function getblynk2(){ 
+  $.get("https://blynk.cloud/external/api/update?token=4XBg1-n41X4nq1NfATBygIeJMLxDIYGg&V2=0", (data, status) => {
+    console.log(data);
+  });
+  }
+</script>
+
+<script> /*shaufi */
+  function getblynk3(){
+  $.get("https://blynk.cloud/external/api/update?token=4XBg1-n41X4nq1NfATBygIeJMLxDIYGg&V3=0", (data, status) => {
     console.log(data);
   });
   }
